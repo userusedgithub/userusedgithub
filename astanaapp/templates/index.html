@@ -1,0 +1,35 @@
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<body>
+ 
+
+    <div class="wrapper">
+        <h1>Добро пожаловать в<br>
+            TechSupply!</h1>
+         <p>
+             Интегрированная система управления логистикой, 
+             <br>разработанная специально для авиакомпании AirAstana. 
+             <br>Управляйте логистическими процессами, храните информацию о заказах, 
+             <br>контролируйте отправку и получение, обрабатывайте документы<br> и получайте полезные отчеты.
+         </p>
+        </div>
+    
+<img src="../static/img/logo.png">
+
+
+<div class="background-text">
+    <div class="text-align">
+    <h1>Выберите действие</h1>
+     <p><a href="{% url 'login' %}">войти</a>
+        <br>
+        <a href="{% url 'registration'%}">зарегистрироваться</a></p>
+  </div>
+  </div>
+
+
+</body>
+{% endblock %}
